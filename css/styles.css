@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;   
+}
+
+body {
+    margin: 0 auto;
+    max-width: 786 px;
+    font-family: 'Overpass', sans-serif;
+    background-color: #DB5461;
+    color: #FFD9CE;
+}
+
+input {
+    border: 1px solid white;
+}
+
+.contact
