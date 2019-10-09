@@ -1,127 +1,127 @@
-<!DOCTYPE flying_saucer>
-<flying_saucer lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <title>Registration Form</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
 
-    <body>
+<body>
 
-        <h1>THE SPACE TOURIST</h1>
-        <div class="wrapper">
-            <div class="signup">
-                <h2>Be on the next space mission!</h2>
-                <h3>Be the first to know about orbital and suborbital flights</h3>
-            </div>
-            <!--/.signup  -->
-            <hr class="hr_one">
-            <hr class="hr_two">
-
-
-            <form class="registration" action="index.flying_saucer" method="post">
-                <fieldset class="contact-info">
-                    <legend>Private Astronaut Information</legend>
-                    <div class="flex-pair">
-                        <label for="name">Space Name</label>
-                        <input type="text" id="name" name="name" placeholder="Required">
-                    </div>
-
-                    <div class="flex-pair">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Required">
-                    </div>
-
-                    <div class="flex-pair">
-                        <label for="telephone">Space Shuttle Phone Number</label>
-                        <input type="tel" id="telephone" name="telephone">
-                    </div>
-
-                    <div class="flex-pair">
-                        <label for="address"> Space Center Address</label>
-                        <input type="text" id="address" name="address">
-                    </div>
-
-                    <div class="flex-pair">
-                        <label for="galaxy">Galaxy</label>
-                        <input type="text" id="galaxy" name="galaxy">
-                    </div>
-
-                    <div class="flex-pair">
-                        <label for="planet">Planet</label>
-                        <select id="planet" name="user_planet">
-                            <optgroup label="Group 1">
-                                <option value="select_your_planet" hidden>Select your Planet:</option>
-                                <option value="venus">Venus</option>
-                                <option value="mars">Mars</option>
-                                <option value="jupiter">Jupiter</option>
-                            </optgroup>
-                            <optgroup label="Group 2">
-                                <option value="saturn">Saturn</option>
-                                <option value="uranus">Uranus</option>
-                                <option value="neptune">Neptune</option>
-                            </optgroup>
-                        </select>
-                    </div>
-
-                    <div class="flex-pair">
-                        <label for="spacewalk">Spacewalks Completed</label>
-                        <input type="text" id="spacewalk" name="spacewalk_number">
-                    </div>
-
-                </fieldset>
-
-                <hr class="hr_three">
-
-                <fieldset class="newsletter">
-
-                    <legend>The Milky Way Gazette</legend>
-
-                    <div class="news">
-
-                        <label class="newsletters">Which topics do you want to hear about?</label><br>
-
-                        <input type="checkbox" id="celestial_events" value="celestial_events" name="news"><label
-                            for="celestial_events">Celestial Events
-                        </label><br>
-
-                        <input type="checkbox" id="extra_life" value="extra_life" name="news"><label
-                            for="extra_life">Extraterrestrial life</label><br>
-
-                        <input type="checkbox" id="rocket_launches" value="rocket_launches" name="news"><label
-                            for="rocket_launches">Rocket Launches</label><br>
-
-
-
-                        <label class="format">News Format</label><br>
-                        <input type="radio" id="flying_saucer" value="flying_saucer" name="format"><label
-                            for="flying_saucer">Flying Saucer</label><br>
-
-                        <input type="radio" id="satellite" value="satellite" name="format"><label for="satellite">
-                            Satellite</label><br>
-
-                    </div><!-- /.news -->
-
-                    <label class="answer" for="answer_area">Other space exploration topics you'd like to hear
-                        about</label><textarea id="answer_area" name="answer_area"></textarea>
-
-                </fieldset>
-
-                <button type="submit">Blast Off!</button>
-
-            </form>
-
+    <h1>THE SPACE TOURIST</h1>
+    <div class="wrapper">
+        <div class="signup">
+            <h2>Be on the next space mission!</h2>
+            <h3>Be the first to know about orbital and suborbital flights</h3>
         </div>
-        <!--/.wraapper  -->
+        <!--/.signup  -->
+        <hr class="hr_one">
+        <hr class="hr_two">
 
-        <footer class="main-footer">
-            <span>&copy; 2019 The Space Tourist</span>
-        </footer>
 
-    </body>
+        <form class="registration" action="index.flying_saucer" method="post">
+            <fieldset class="contact-info">
+                <legend>Private Astronaut Information</legend>
+                <div class="flex-pair">
+                    <label for="name">Space Name</label>
+                    <input type="text" id="name" name="name" placeholder="Required">
+                </div>
+
+                <div class="flex-pair">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Required">
+                </div>
+
+                <div class="flex-pair">
+                    <label for="telephone">Space Shuttle Phone Number</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+
+                <div class="flex-pair">
+                    <label for="address"> Space Center Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="flex-pair">
+                    <label for="galaxy">Galaxy</label>
+                    <input type="text" id="galaxy" name="galaxy">
+                </div>
+
+                <div class="flex-pair">
+                    <label for="planet">Planet</label>
+                    <select id="planet" name="user_planet">
+                        <optgroup label="Group 1">
+                            <option value="select_your_planet" hidden>Select your Planet:</option>
+                            <option value="venus">Venus</option>
+                            <option value="mars">Mars</option>
+                            <option value="jupiter">Jupiter</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="saturn">Saturn</option>
+                            <option value="uranus">Uranus</option>
+                            <option value="neptune">Neptune</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="flex-pair">
+                    <label for="spacewalk">Spacewalks Completed</label>
+                    <input type="text" id="spacewalk" name="spacewalk_number">
+                </div>
+
+            </fieldset>
+
+            <hr class="hr_three">
+
+            <fieldset class="newsletter">
+
+                <legend>The Milky Way Gazette</legend>
+
+                <div class="news">
+
+                    <label class="newsletters">Which topics do you want to hear about?</label><br>
+
+                    <input type="checkbox" id="celestial_events" value="celestial_events" name="news"><label
+                        for="celestial_events">Celestial Events
+                    </label><br>
+
+                    <input type="checkbox" id="extra_life" value="extra_life" name="news"><label
+                        for="extra_life">Extraterrestrial life</label><br>
+
+                    <input type="checkbox" id="rocket_launches" value="rocket_launches" name="news"><label
+                        for="rocket_launches">Rocket Launches</label><br>
+
+
+
+                    <label class="format">News Format</label><br>
+                    <input type="radio" id="flying_saucer" value="flying_saucer" name="format"><label
+                        for="flying_saucer">Flying Saucer</label><br>
+
+                    <input type="radio" id="satellite" value="satellite" name="format"><label for="satellite">
+                        Satellite</label><br>
+
+                </div><!-- /.news -->
+
+                <label class="answer" for="answer_area">Other space exploration topics you'd like to hear
+                    about</label><textarea id="answer_area" name="answer_area"></textarea>
+
+            </fieldset>
+
+            <button type="submit">Blast Off!</button>
+
+        </form>
+
+    </div>
+    <!--/.wraapper  -->
+
+    <footer class="main-footer">
+        <span>&copy; 2019 The Space Tourist</span>
+    </footer>
+
+</body>
 
 </flying_saucer>
