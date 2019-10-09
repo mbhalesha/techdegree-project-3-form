@@ -1,17 +1,180 @@
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;   
 }
 
 body {
-    margin: 0 auto;
-    max-width: 786 px;
+    /* margin: 0 auto; */
+    max-width: 768 px;
     font-family: 'Overpass', sans-serif;
-    background-color: #DB5461;
-    color: #FFD9CE;
+    /* line-height: 1.5em; * -- don't need/ 
+    /* background-color: ;  FILL THIS IN*/
+    color: black;
+    background: url(https://thewallpaper.co//wp-content/uploads/2016/09/hd-space-wallpapers-galaxy-high-definition-desktop-images-free-download-iphone-wallpapers-airspace-1024x768.jpg) no-repeat center center fixed;
+    background-size: cover;   
 }
 
-input {
+h1 { 
+    /* header title */
+    background-color: black;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.wrapper {
+    /* margin-bottom: 3em; */
+    width: 100%;
+}
+
+.signup {
+    text-align: center;
+    color: black;
+    margin-bottom: 1.5em;
+    
+}
+
+h2 {
+   font-size: 1.5em;
+   margin-bottom: 1.2em; 
+}
+
+h3 {
+    font-size: 1.3em;
+    color: black;
+    margin-bottom: 1.3em;
+}
+
+.hr_one {
+    border: .2em solid black;
+    margin-bottom: .3em;
+}
+
+.hr_two {
+    border: .05em solid black;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+    border: none;
+    font-size: 1.1em;
+    height: auto;
+    padding: 1em;
+    width: 100%;
+    background-color: peachpuff;
+    box-shadow: 5px black inset;
+    margin-bottom: 1.2em;
+    border-radius: .5em;
+    color: purple;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+}
+
+input:focus,
+textarea:focus {
+    background-color: darkkhaki;
+}
+
+legend {
+    font-size: 2em;
+    margin-bottom: .8em;
+    color: black;
+}
+
+label {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: .5em;
+}
+
+/* input {
     border: 1px solid white;
+} */
+
+fieldset label {
+    color: green;
+    margin-bottom: 1em;
 }
 
-.contact
+.contact-info,
+.newsletter {
+    padding: 50px 50px 35px 50px;
+    /* display: block; */
+}
+
+/* .news {
+    margin-bottom: 3em;
+} */
+
+.hr_three {
+    border: .05em solid black;
+    margin: 1em;
+}
+
+textarea {
+    min-height: 5em;
+    line-height: 2em;
+    min-width: 13em;
+    font-size: 1.1em;
+    font-family: 'Overpass', sans-serif;
+    margin: 1em 0;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin: 10px;
+}
+
+button {
+    padding: .2em;
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+    border-radius: .5em;
+    width: 100%;
+    height: 2em;
+    background-color:blueviolet;
+    margin: 1em auto;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: perspective(.2em);
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: translateY(.2em);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    background-color: darkgrey;
+    color: black;
+    margin: auto;
+    height: 3em;
+}
+
+.contact-info,
+.flex-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+
+
+}
