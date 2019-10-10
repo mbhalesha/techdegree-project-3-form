@@ -6,36 +6,44 @@
 }
 
 body {
-    /* margin: 0 auto; */
+    margin: 0 auto;
     max-width: 768 px;
     font-family: 'Overpass', sans-serif;
-    /* line-height: 1.5em; * -- don't need/ 
-    /* background-color: ;  FILL THIS IN*/
-    color: black;
-    background: url(https://thewallpaper.co//wp-content/uploads/2016/09/hd-space-wallpapers-galaxy-high-definition-desktop-images-free-download-iphone-wallpapers-airspace-1024x768.jpg) no-repeat center center fixed;
-    background-size: cover;   
+    line-height: 1.5em; 
+    line-spa
+    /* background-color: ? */
+    /* color: #171738;   */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 25em;
+    margin-bottom: 1.5em;
+    border-radius: .5em;
 }
 
 h1 { 
     /* header title */
-    background-color: black;
     text-align: center;
     padding: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    background-color: #0D0630 ;
     color: white;
     margin-bottom: 1.5em;
+    width: 100%
 }
 
 .wrapper {
     /* margin-bottom: 3em; */
     width: 100%;
+    margin: auto;
 }
 
 .signup {
     text-align: center;
-    color: black;
+    color: #18314F;
     margin-bottom: 1.5em;
-    
 }
 
 h2 {
@@ -45,49 +53,46 @@ h2 {
 
 h3 {
     font-size: 1.3em;
-    color: black;
+    color: #18314F;
     margin-bottom: 1.3em;
 }
 
 .hr_one {
     border: .2em solid black;
     margin-bottom: .3em;
+    width: 90%;
 }
 
 .hr_two {
     border: .05em solid black;
+    margin-bottom: 2em;
+    width: 90%;
 }
-
 
 input[type=text],
 input[type=email],
 input[type=tel],
 textarea,
 select {
+    background-color: #8BBEB2;
     border: none;
     font-size: 1.1em;
     height: auto;
     padding: 1em;
     width: 100%;
-    background-color: peachpuff;
     box-shadow: 5px black inset;
     margin-bottom: 1.2em;
-    border-radius: .5em;
-    color: purple;
+    color: #384E77;
+    border-radius: .2em;
 }
 
 ::-webkit-input-placeholder {
     text-align: right;
 }
 
-input:focus,
-textarea:focus {
-    background-color: darkkhaki;
-}
-
 legend {
-    font-size: 2em;
-    margin-bottom: .8em;
+    font-size: 1.4em;
+    margin-bottom: .2em;
     color: black;
 }
 
@@ -102,7 +107,7 @@ label {
 } */
 
 fieldset label {
-    color: green;
+    color: #18314F;
     margin-bottom: 1em;
 }
 
@@ -118,7 +123,8 @@ fieldset label {
 
 .hr_three {
     border: .05em solid black;
-    margin: 1em;
+    margin: 3em;
+    width: 90%;
 }
 
 textarea {
@@ -143,28 +149,55 @@ button {
     border-radius: .5em;
     width: 100%;
     height: 2em;
-    background-color:blueviolet;
+    background-color: #384E77;
+    box-shadow: 2px black inset;
     margin: 1em auto;
     cursor: pointer;
 }
 
-button:hover {
+/*  for sinking button on hover:
+ button:hover {
     transform: perspective(.2em);
     transition-duration: 0.2s;
     transition-property: transform;
     transition-timing-function: ease-out;
     transform: translateY(.2em);
+} */
+
+/* for floating button on hover */
+button:hover {
+    transform: perspective(.2em);
+    transition-duration: 0.2s;
+    transform: translateY(-10px);
+    transition-timing-function: ease-out;
 }
+
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: #E6F9AF;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: .1em dashed #8BBEB2;
+}
+
+/* button:focus {
+    box-shadow 2px #8BBEB2;
+} */
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1em;
-    background-color: darkgrey;
+    font-size: .9em;
+    background-color: #384E77;
     color: black;
     margin: auto;
     height: 3em;
+    color: #E6F9AF;
 }
 
 .contact-info,
@@ -173,8 +206,14 @@ footer {
     flex-direction: column;
 }
 
+
+
+
 @media (min-width: 768px) {
 
-
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
