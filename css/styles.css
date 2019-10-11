@@ -1,73 +1,118 @@
 * {
     box-sizing: border-box;
-    /* box-sizing: border-box means the padding and border are included in the width and height. */
-    /* margin: 0;
-    padding: 0;
-    border: 0;    */
-}
+  }
 
-body {
+  body {
     margin: 0 auto;
     max-width: 768px;
-    font-family: 'Overpass', sans-serif;
     background-color: #E8F1F2;
-    line-height: 1.5em; 
-    /* color: #171738;   */
-    
-    /* remove the margin that browsers add by default, limit the max width, set the font, and add a background color. */
-}
+    line-height: 1.5em;
+    color: #0D0630;
+    padding: .46em;
+  }
 
-.logo {
+  .logo {
     display: block;
     margin: 0 auto;
-    width: 25em;
+    width: 50%;
     margin-bottom: 2em;
     border-radius: .5em;
 }
 
 h1 { 
-    /* header title */
     text-align: center;
+    font-family: 'Chivo', sans-serif;
     padding: 1.5em;
     font-size: 1.6em;
     background-color: #0D0630 ;
     color: white;
     margin-bottom: 1.5em;
-    width: 100%
-}
-
-.wrapper {
-    /* margin-bottom: 3em; */
     width: 100%;
-    margin: auto;
 }
 
-.signup {
-    text-align: center;
-    color: #18314F;
-    margin-bottom: 1.5em;
+h1,
+h2,
+h3 {
+    line-height: 1.4em;
+}
+
+h2,
+h3,
+label,
+legend, 
+input,
+select,
+textarea,
+button,
+footer  {
+    font-family: 'Overpass', sans-serif;
 }
 
 h2 {
-   font-size: 1.5em;
-   margin-bottom: 1.2em; 
-}
+    font-size: 1.5em;
+ }
 
 h3 {
     font-size: 1.3em;
-    color: #18314F;
-    margin-bottom: 1.3em;
+}
+
+legend {
+    padding-top: 1em;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+  .contact-information,
+  .newsletter {
+    padding: 50px 50px 35px 50px;
+  }
+
+  .contact-information .flex-pair {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-information label, 
+  select {
+    margin-bottom: .4em;
+  }
+
+  .contact-information input {
+    height: 2em;
+    margin-bottom: .7em;
+  }
+
+  #spacewalk {
+    max-width: 65%;
+  }
+
+ input::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: .9em;
+    padding-right: .1em;
+    
+} 
+
+.signup {
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 
 .hr_one {
-    border: .2em solid black;
+    border: .2em solid #384E77;
     margin-bottom: .3em;
     width: 90%;
 }
 
 .hr_two {
-    border: .05em solid black;
-    margin-bottom: 2em;
+    border: .05em solid #384E77;
+    width: 90%;
+}
+
+.hr_three {
+    border: .05em solid #384E77;
     width: 90%;
 }
 
@@ -82,64 +127,19 @@ select {
     height: auto;
     padding: 1em;
     width: 100%;
-    box-shadow: 5px black inset;
     margin-bottom: 1.2em;
     color: #384E77;
     border-radius: .2em;
+    font-family: 'Overpass', sans-serif;
 }
 
-::-webkit-input-placeholder {
-    text-align: right;
-}
-
-legend {
-    font-size: 1.4em;
-    margin-bottom: .2em;
-    color: black;
-}
-
-/* label {
-    font-size: 1.1em;
-    color: black;
-    margin-bottom: .5em;
-} */
-
-/* input {
-    border: 1px solid white;
-} */
-
-/* fieldset label {
-    color: #18314F;
-    margin-bottom: 1em;
-} */
-
-fieldset {
-    border: none;
-}
-
-.contact-info,
-.newsletter {
-    padding: 50px 50px 35px 50px;
-    /* display: block; */
-}
-
-/* .news {
-    margin-bottom: 3em;
-} */
-
-.hr_three {
-    border: .05em solid black;
-    margin: 3em;
-    width: 90%;
+select {
+    font-size: 1em;
 }
 
 textarea {
-    min-height: 5em;
-    line-height: 2em;
-    min-width: 13em;
-    font-size: 1.1em;
-    font-family: 'Overpass', sans-serif;
-    margin: 1em 0;
+    margin-top: 1em;
+    width: 100%;
 }
 
 input[type=radio],
@@ -150,27 +150,17 @@ input[type=checkbox] {
 button {
     padding: .2em;
     color: white;
-    font-size: 1.6em;
+    background-color: #384E77; 
+    font-size: 1.5em;
     text-align: center;
     border-radius: .5em;
     width: 100%;
     height: 2em;
-    background-color: #384E77;
-    box-shadow: 2px black inset;
-    margin: 1em auto;
+    margin: 2em auto;
     cursor: pointer;
+    
 }
 
-/*  for sinking button on hover:
- button:hover {
-    transform: perspective(.2em);
-    transition-duration: 0.2s;
-    transition-property: transform;
-    transition-timing-function: ease-out;
-    transform: translateY(.2em);
-} */
-
-/* for floating button on hover */
 button:hover {
     transform: perspective(.2em);
     transition-duration: 0.2s;
@@ -179,8 +169,7 @@ button:hover {
 }
 
 input:hover,
-select:hover,
-textarea:hover {
+select:hover {
     background-color: #E6F9AF;
 }
 
@@ -190,51 +179,69 @@ textarea:focus {
     border: .1em dashed #8BBEB2;
 }
 
-/* button:focus {
-    box-shadow 2px #8BBEB2;
-} */
+
+textarea:focus {
+    transition: background-color 1s ease-out;
+    background-color: rgb(208, 233, 227);
+}
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: .9em;
+    text-align: center;
+    padding: 1em;
     background-color: whitesmoke;
-    color: black;
-    margin: auto;
-    padding: 2em 0;
+    font-size: .9em;
 }
 
-.contact-info,
-.flex-pair {
-    display: flex;
-    flex-direction: column;
+fieldset {
+    border: none;
 }
 
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
 
-    .contact-info .flex-pair {
+    .contact-information .flex-pair {
         flex-direction: row;
       }
 
-      .contact-info input {
+      .contact-information input {
         flex-grow: 1;
         flex-basis: 75%;
       }
-      
-      .contact-info label {
+
+      .contact-information label {
         flex-basis: 25%;
         height: 50px;
         margin: auto 0;
       }
 
-      
-    .wrapper label {
-        flex-basis: 30%;
+      #spacewalk {
+        max-width: 35%;
+      }
+
+      .wrapper label {
+        flex-basis: 45%;
     }
 
-    .wrapper input, select {
-        flex-basis: 70%;
+    .wrapper input,
+    select {
+        flex-basis: 55%;
     }
-}
 
+    .wrapper select {
+        flex-basis: 55%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+  }
+    
+
+  /*   
+  colors:
+#0D0630 - dark purple - body
+#18314F - slate blue
+#384E77 - blue - button color, horizontal rule
+#8BBEB2 - light green - background color for input, select, textarea
+#E6F9AF - lime green - focus of the input color
+  */ 
