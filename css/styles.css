@@ -134,6 +134,7 @@ select {
 
 select {
     font-size: 1em;
+    height: 4em;
 }
 
 textarea {
@@ -168,16 +169,18 @@ button:hover {
 
 input:hover,
 select:hover {
-    background-color: #E6F9AF;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
+    /* background-color: #E6F9AF; */
     border: .1em dashed #8BBEB2;
 }
 
+/* input:focus,
+select:focus,
+textarea:focus {
+    border: .1em dashed #8BBEB2;
+} */
 
+input:focus,
+select:focus,
 textarea:focus {
     transition: background-color 1s ease-out;
     background-color: rgb(208, 233, 227);
@@ -233,13 +236,3 @@ fieldset {
     }
 
   }
-    
-
-  /*   
-  colors:
-#0D0630 - dark purple - body
-#18314F - slate blue
-#384E77 - blue - button color, horizontal rule
-#8BBEB2 - light green - background color for input, select, textarea
-#E6F9AF - lime green - focus of the input color
-  */ 
