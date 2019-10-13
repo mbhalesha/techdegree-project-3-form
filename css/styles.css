@@ -21,13 +21,17 @@
 
 h1 { 
     text-align: center;
-    font-family: 'Chivo', sans-serif;
     padding: 1.5em;
     font-size: 1.6em;
     background-color: #0D0630 ;
     color: white;
     margin-bottom: 1.5em;
     width: 100%;
+}
+
+h1, 
+legend {
+  font-family: 'Chivo', sans-serif;
 }
 
 h1,
@@ -38,8 +42,7 @@ h3 {
 
 h2,
 h3,
-label,
-legend, 
+label, 
 input,
 select,
 textarea,
@@ -121,7 +124,7 @@ input[type=tel],
 textarea,
 select {
     background-color: #8BBEB2;
-    border: none;
+    border: .4px solid #8BBEB2;
     font-size: 1.1em;
     height: auto;
     padding: 1em;
@@ -167,17 +170,9 @@ button:hover {
     transition-timing-function: ease-out;
 }
 
-input:hover,
-select:hover {
-    /* background-color: #E6F9AF; */
-    border: .1em dashed #8BBEB2;
+fieldset {
+  border: none;
 }
-
-/* input:focus,
-select:focus,
-textarea:focus {
-    border: .1em dashed #8BBEB2;
-} */
 
 input:focus,
 select:focus,
@@ -186,15 +181,17 @@ textarea:focus {
     background-color: rgb(208, 233, 227);
 }
 
+input:hover,
+select:hover,
+textarea:hover {
+    border: .1em dashed #18314F;
+}
+
 footer {
     text-align: center;
     padding: 1em;
     background-color: whitesmoke;
     font-size: .9em;
-}
-
-fieldset {
-    border: none;
 }
 
   @media (min-width: 768px) {
