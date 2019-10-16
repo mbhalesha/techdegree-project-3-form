@@ -1,4 +1,4 @@
-# Techdegree-Project-3-Form
+# My Techdegree Project 3: Registration Form
 My Third Techdegree Project
 
 Registration Form
