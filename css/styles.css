@@ -177,6 +177,7 @@ fieldset {
 input:focus,
 select:focus,
 textarea:focus {
+    outline: 0;
     transition: background-color 1s ease-out;
     background-color: rgb(208, 233, 227);
 }
