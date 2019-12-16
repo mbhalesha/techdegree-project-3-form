@@ -1,4 +1,4 @@
-My Techdegree Project 3: Registration Form
+# My Techdegree Project 3: Registration Form
 
 https://mbhalesha.github.io/techdegree-project-3-form/
 
